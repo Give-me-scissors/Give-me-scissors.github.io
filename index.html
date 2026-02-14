@@ -393,12 +393,9 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/pipeline.png" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 900px; margin: 0 auto;"></div>
+        <img src="static/images/pipeline.png" alt="result 1" style="height: 500px; object-fit: contain; width: 100%;"/>
+        <h2 class="subtitle has-text-left" style="padding: 15px 0;">
           The pipeline of the collision-free dual-arm surgical assistive robot for instrument delivery.
           The robot system receives multi-modal inputs from the physical world (i.e., surgeon instruction, color image, depth data).
           The real-time obstacle perception module computes the minimum distance between robot and environmental obstacles.
@@ -406,19 +403,19 @@
           The high-level task planning utilizes VLM to generate the desired motion objectives for the QP framework.
         </h2>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/EnvDistancePrediction.png" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Real-time obstacle perception process.
-          The robot joint configuration and point cloud of obstacles are taken as input.
-          Output is the minimum distance between robot and obstacle.
-       </h2>
-     </div>
-     <div class="item">
+    <div class="item">
       <!-- Your image here -->
-      <img src="static/images/KeypointsImageJPG.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
+      <img src="static/images/EnvDistancePrediction.png" alt="result 2" style="height: 500px; object-fit: contain; width: 100%;"/>
+      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
+        Real-time obstacle perception process.
+        The robot joint configuration and point cloud of obstacles are taken as input.
+        Output is the minimum distance between robot and obstacle.
+      </h2>
+    </div>
+    <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/KeypointsImageJPG.jpg" alt="result 3" style="height: 500px; object-fit: contain; width: 100%;"/>
+      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
         The keypoints in the experimental process.
         They represent the 3D positions of the corresponding objects.
         The arrows indicate the sub-goals of the robot.
@@ -426,8 +423,8 @@
     </div>
     <div class="item">
       <!-- Your image here -->
-      <img src="static/images/RealCollisionSceneJPG.jpg" alt="Fifth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
+      <img src="static/images/RealCollisionSceneJPG.jpg" alt="result 4" style="height: 500px; object-fit: contain; width: 100%;"/>
+      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
         Dual-arm robot avoids obstacle and self-collision during motion.
         Yellow and blue ellipses represent the desired trajectories of dual-arm robot end-effector.
         Red/blue arrow denotes the motion direction of the left/right arm.
@@ -435,8 +432,8 @@
     </div>
     <div class="item">
       <!-- Your image here -->
-      <img src="static/images/ToolExperimentJPG.jpg" alt="Sixth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
+      <img src="static/images/ToolExperimentJPG.jpg" alt="result 5" style="height: 500px; object-fit: contain; width: 100%;"/>
+      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
         The experimental process of robot-assisted surgical instrument delivery. 
         The dual-arm robot grasped different surgical instruments in accordance with the surgeon's instructions.
         The surgical instruments were then transferred to the surgeon's hand in sequence.

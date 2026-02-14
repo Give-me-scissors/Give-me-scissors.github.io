@@ -416,10 +416,10 @@
       <h2 class="title is-3 has-text-centered">Experimental Results</h2>
       <div id="results-carousel" class="carousel results-carousel" style="max-width: 1500px; margin: 0 auto;">
         
-        <!-- Item 2 (原 result 3) -->
+        <!-- Item 1 -->
         <div class="item">
           <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
-            <img src="static/images/KeypointsImageJPG.jpg" alt="result 3" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+            <img src="static/images/KeypointsImageJPG.jpg" alt="result 1" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
           </div>
           <h2 class="subtitle has-text-left" style="padding: 15px 10px; font-size: 1.1rem;">
             The keypoints in the experimental process.
@@ -428,10 +428,10 @@
           </h2>
         </div>
 
-        <!-- Item 3 (原 result 4) -->
+        <!-- Item 2 -->
         <div class="item">
           <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
-            <img src="static/images/RealCollisionSceneJPG.jpg" alt="result 4" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+            <img src="static/images/RealCollisionSceneJPG.jpg" alt="result 2" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
           </div>
           <h2 class="subtitle has-text-left" style="padding: 15px 10px; font-size: 1.1rem;">
             Dual-arm robot avoids obstacle and self-collision during motion.
@@ -440,16 +440,64 @@
           </h2>
         </div>
 
-        <!-- Item 4 (原 result 5) -->
+        <!-- Item 3 -->
         <div class="item">
           <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
-            <img src="static/images/ToolExperimentJPG.jpg" alt="result 5" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+            <img src="static/images/ToolExperimentJPG.jpg" alt="result 3" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
           </div>
           <h2 class="subtitle has-text-left" style="padding: 15px 10px; font-size: 1.1rem;">
             The experimental process of robot-assisted surgical instrument delivery. 
             The dual-arm robot grasped different surgical instruments in accordance with the surgeon's instructions.
             The surgical instruments were then transferred to the surgeon's hand in sequence.
             The entire process was conducted within the proposed QP framework to prevent collisions.
+          </h2>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/simulation_scene.png" alt="result 4" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 10px; font-size: 1.1rem;">
+            Obstacle and self-collision avoidance process of the dual-arm robot in simulation.
+            The red arrows indicate the avoidance directions for dual-arm robot.
+            (a) Self-collision avoidance. 
+            (b) Obstacle avoidance.
+          </h2>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/simulation_traj.png" alt="result 5" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 10px; font-size: 1.1rem;">
+            The trajectories of dual-arm robot's end-effector and obstacles during simulation.
+            The avoidance motion is achieved by our method.
+          </h2>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/simulation_min_distance.png" alt="result 6" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 10px; font-size: 1.1rem;">
+            Minimum self-distance between dual arms and minimum distance between right arm and obstacle.
+            The shadow region represents the portion where the minimum distance falls below the safety distance threshold.
+          </h2>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/RealCollisionResults.png" alt="result 7" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 10px; font-size: 1.1rem;">
+            The results of the collision avoidance real-world experiment.
+            (a) Histogram of optimization cost time.
+            (b) Right arm end-effector's acceleration.
+            (c) Left arm end-effector's acceleration.
           </h2>
         </div>
 

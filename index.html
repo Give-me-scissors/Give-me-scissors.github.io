@@ -388,64 +388,81 @@
 </section>
 <!-- End paper abstract -->
 
-
 <!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <div id="results-carousel" class="carousel results-carousel" style="max-width: 900px; margin: 0 auto;"></div>
-        <img src="static/images/pipeline.png" alt="result 1" style="height: 500px; object-fit: contain; width: 100%;"/>
-        <h2 class="subtitle has-text-left" style="padding: 15px 0;">
-          The pipeline of the collision-free dual-arm surgical assistive robot for instrument delivery.
-          The robot system receives multi-modal inputs from the physical world (i.e., surgeon instruction, color image, depth data).
-          The real-time obstacle perception module computes the minimum distance between robot and environmental obstacles.
-          The QP framework is built upon the minimum distance, ensuring the dual-arm robot's collision-free operation.
-          The high-level task planning utilizes VLM to generate the desired motion objectives for the QP framework.
-        </h2>
-      </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/EnvDistancePrediction.png" alt="result 2" style="height: 500px; object-fit: contain; width: 100%;"/>
-      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
-        Real-time obstacle perception process.
-        The robot joint configuration and point cloud of obstacles are taken as input.
-        Output is the minimum distance between robot and obstacle.
-      </h2>
-    </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/KeypointsImageJPG.jpg" alt="result 3" style="height: 500px; object-fit: contain; width: 100%;"/>
-      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
-        The keypoints in the experimental process.
-        They represent the 3D positions of the corresponding objects.
-        The arrows indicate the sub-goals of the robot.
-      </h2>
-    </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/RealCollisionSceneJPG.jpg" alt="result 4" style="height: 500px; object-fit: contain; width: 100%;"/>
-      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
-        Dual-arm robot avoids obstacle and self-collision during motion.
-        Yellow and blue ellipses represent the desired trajectories of dual-arm robot end-effector.
-        Red/blue arrow denotes the motion direction of the left/right arm.
-      </h2>
-    </div>
-    <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/ToolExperimentJPG.jpg" alt="result 5" style="height: 500px; object-fit: contain; width: 100%;"/>
-      <h2 class="subtitle has-text-left" style="padding: 15px 0;">
-        The experimental process of robot-assisted surgical instrument delivery. 
-        The dual-arm robot grasped different surgical instruments in accordance with the surgeon's instructions.
-        The surgical instruments were then transferred to the surgeon's hand in sequence.
-        The entire process was conducted within the proposed QP framework to prevent collisions.
-      </h2>
+      <!-- 统一设置轮播图最大宽度 -->
+      <div id="results-carousel" class="carousel results-carousel" style="max-width: 900px; margin: 0 auto;">
+        
+        <!-- Item 1 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/pipeline.png" alt="result 1" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 0; font-size: 1.1rem;">
+            The pipeline of the collision-free dual-arm surgical assistive robot for instrument delivery.
+            The robot system receives multi-modal inputs from the physical world (i.e., surgeon instruction, color image, depth data).
+            The real-time obstacle perception module computes the minimum distance between robot and environmental obstacles.
+            The QP framework is built upon the minimum distance, ensuring the dual-arm robot's collision-free operation.
+            The high-level task planning utilizes VLM to generate the desired motion objectives for the QP framework.
+          </h2>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/EnvDistancePrediction.png" alt="result 2" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 0; font-size: 1.1rem;">
+            Real-time obstacle perception process.
+            The robot joint configuration and point cloud of obstacles are taken as input.
+            Output is the minimum distance between robot and obstacle.
+          </h2>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/KeypointsImageJPG.jpg" alt="result 3" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 0; font-size: 1.1rem;">
+            The keypoints in the experimental process.
+            They represent the 3D positions of the corresponding objects.
+            The arrows indicate the sub-goals of the robot.
+          </h2>
+        </div>
+
+        <!-- Item 4 (倒数第二张：针对性优化) -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/RealCollisionSceneJPG.jpg" alt="result 4" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 0; font-size: 1.1rem;">
+            Dual-arm robot avoids obstacle and self-collision during motion.
+            Yellow and blue ellipses represent the desired trajectories of dual-arm robot end-effector.
+            Red/blue arrow denotes the motion direction of the left/right arm.
+          </h2>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="item">
+          <div style="height: 450px; display: flex; align-items: center; justify-content: center;">
+            <img src="static/images/ToolExperimentJPG.jpg" alt="result 5" style="max-height: 100%; max-width: 100%; object-fit: contain;"/>
+          </div>
+          <h2 class="subtitle has-text-left" style="padding: 15px 0; font-size: 1.1rem;">
+            The experimental process of robot-assisted surgical instrument delivery. 
+            The dual-arm robot grasped different surgical instruments in accordance with the surgeon's instructions.
+            The surgical instruments were then transferred to the surgeon's hand in sequence.
+            The entire process was conducted within the proposed QP framework to prevent collisions.
+          </h2>
+        </div>
+
+      </div> <!-- End carousel -->
     </div>
   </div>
-</div>
-</div>
 </section>
 <!-- End image carousel -->
-
 
 
 <!--BibTex citation -->

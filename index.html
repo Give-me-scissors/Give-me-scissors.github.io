@@ -396,45 +396,51 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- TODO: Replace with your research result images -->
-        <img src="static/images/background.png" alt="First research result visualization" loading="lazy"/>
+        <img src="static/images/pipeline.png" alt="First research result visualization" loading="lazy"/>
         <!-- TODO: Replace with description of this result -->
         <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/pipeline.png" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
+          The pipeline of the collision-free dual-arm surgical assistive robot for instrument delivery.
+          The robot system receives multi-modal inputs from the physical world (i.e., surgeon instruction, color image, depth data).
+          The real-time obstacle perception module computes the minimum distance between robot and environmental obstacles.
+          The QP framework is built upon the minimum distance, ensuring the dual-arm robot's collision-free operation.
+          The high-level task planning utilizes VLM to generate the desired motion objectives for the QP framework.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
         <img src="static/images/EnvDistancePrediction.png" alt="Third research result visualization" loading="lazy"/>
         <h2 class="subtitle has-text-centered">
-         Third image description.
+          Real-time obstacle perception process.
+          The robot joint configuration and point cloud of obstacles are taken as input.
+          Output is the minimum distance between robot and obstacle.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
       <img src="static/images/KeypointsImageJPG.jpg" alt="Fourth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Fourth image description.
+        The keypoints in the experimental process.
+        They represent the 3D positions of the corresponding objects.
+        The arrows indicate the sub-goals of the robot.
       </h2>
     </div>
     <div class="item">
       <!-- Your image here -->
       <img src="static/images/RealCollisionSceneJPG.jpg" alt="Fifth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Fifth image description.
+        Dual-arm robot avoids obstacle and self-collision during motion.
+        Yellow and blue ellipses represent the desired trajectories of dual-arm robot end-effector.
+        Red/blue arrow denotes the motion direction of the left/right arm.
       </h2>
     </div>
     <div class="item">
       <!-- Your image here -->
       <img src="static/images/ToolExperimentJPG.jpg" alt="Sixth research result visualization" loading="lazy"/>
       <h2 class="subtitle has-text-centered">
-        Sixth image description.
+        The experimental process of robot-assisted surgical instrument delivery. 
+        The dual-arm robot grasped different surgical instruments in accordance with the surgeon's instructions.
+        The surgical instruments were then transferred to the surgeon's hand in sequence.
+        The entire process was conducted within the proposed QP framework to prevent collisions.
       </h2>
     </div>
   </div>
